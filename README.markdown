@@ -1,4 +1,14 @@
-A [Giter8][g8] template for a Hello World [Finatra]() application.
+# Hello Finatra
+
+A [Giter8][g8] template for a Hello World [Finatra](https://github.com/twitter/finatra) application.
+
+## Using
+
+```
+sbt new robinske/hello-finatra.g8
+```
+
+## Credits
 
 Forked from the Scala Center Hello World Giter8 template.
 
