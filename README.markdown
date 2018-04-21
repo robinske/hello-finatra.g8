@@ -67,13 +67,13 @@ You’ll then see a list of available phone numbers and their capabilities. Find
 
 Now that you have a Twilio account and a programmable phone number, you can start writing some code! To make things even easier, we'll next install Twilio's official helper for Python applications.
 
-### Allow Twilio to talk to your Flask application
+### Allow Twilio to talk to your application
 
-We’re about to build a small Flask application to receive incoming messages. Before we do that, we need to make sure that Twilio can reach your application.
+We’re about to build a small Finatra application to receive incoming messages. Before we do that, we need to make sure that Twilio can reach your application.
 
 Most Twilio services use [webhooks](https://www.twilio.com/docs/glossary/what-is-a-webhook) to communicate with your application. When Twilio receives an SMS, for example, it reaches out to a URL in your application for instructions on how to handle the message.
 
-When you’re working on your Flask application in your development environment, your app is only reachable by other programs on your computer, so Twilio won’t be able to talk to it. We need to solve this problem by making your application accessible over the internet.
+When you’re working on your Finatra application in your development environment, your app is only reachable by other programs on your computer, so Twilio won’t be able to talk to it. We need to solve this problem by making your application accessible over the internet.
 
 While there are a lot of ways to do this, like deploying your application to Heroku or AWS, you'll probably want a less laborious way to test your Twilio application. For a lightweight way to make your app available on the internet, we recommend a tool called Ngrok. Once started, Ngrok provides a unique URL on the ngrok.io domain which forwards incoming requests to your local development environment.
 
@@ -150,9 +150,9 @@ For Twilio to know where to look, you need to configure your Twilio phone number
 Save your changes - you're ready!
 
 #### Test your application
-As long as your localhost and the Ngrok servers are up and running, we’re ready for the fun part - testing our new Flask application!
+As long as your localhost and the Ngrok servers are up and running, we’re ready for the fun part - testing our new Finatra application!
 
-Send a text message from your mobile phone to your Twilio phone number. You should see an HTTP request in your Ngrok console. Your Flask app will process the text message, and you’ll get your response back as an SMS.
+Send a text message from your mobile phone to your Twilio phone number. You should see an HTTP request in your Ngrok console. Your Finatra app will process the text message, and you’ll get your response back as an SMS.
 
 ### Where to next?
 
