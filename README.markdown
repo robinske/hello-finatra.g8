@@ -53,9 +53,9 @@ In this Quickstart, you will learn how to:
 1. Reply to incoming messages with an SMS
 
 ### Sign up for Twilio and get a phone number
-If you already have a Twilio account and an SMS-enabled Twilio phone number, you’re all set here! [Feel free to jump to the next step.](https://github.com/robinske/hello-finatra.g8/blob/master/README.markdown#allow-twilio-to-talk-to-your-flask-application)
+If you already have a Twilio account and an SMS-enabled Twilio phone number, you’re all set here! [Feel free to jump to the next step.](https://github.com/robinske/hello-finatra.g8/blob/master/README.markdown#allow-twilio-to-talk-to-your-application)
 
-Before you can send an SMS from Python, you'll need to [sign up for a Twilio account](https://www.twilio.com/try-twilio) or sign into your existing account and [purchase an SMS-capable phone number](https://www.twilio.com/console/phone-numbers).
+Before you can respond to an SMS with Scala, you'll need to [sign up for a Twilio account](https://www.twilio.com/try-twilio) or sign into your existing account and [purchase an SMS-capable phone number](https://www.twilio.com/console/phone-numbers).
 
 If you don't currently own a Twilio phone number with SMS functionality, you'll need to purchase one.  After navigating to the [Buy a Number](https://www.twilio.com/console/phone-numbers/search) page, check the "SMS" box and click "Search."
 
@@ -65,7 +65,7 @@ You’ll then see a list of available phone numbers and their capabilities. Find
 
 ![image](https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/sms_buy_number.width-800.png)
 
-Now that you have a Twilio account and a programmable phone number, you can start writing some code! To make things even easier, we'll next install Twilio's official helper for Python applications.
+Now that you have a Twilio account and a programmable phone number, you can start writing some code!
 
 ### Allow Twilio to talk to your application
 
@@ -116,7 +116,7 @@ class HelloController extends Controller {
     val twiml =
       <Response>
         <Message>
-          Hi thanks for coming to Scalabridge - krobinson@twilio.com
+          Hi, thanks for sending me a message!
         </Message>
       </Response>
 
@@ -156,7 +156,7 @@ Send a text message from your mobile phone to your Twilio phone number. You shou
 
 ### Where to next?
 
-Now that you know the basics of sending and receiving SMS and MMS text messages with Python, you might want to check out these resources.
+Now that you know the basics of receiving and responding to SMS text messages with Scala, you might want to check out these resources.
 
 * [Send an SMS message from your application](https://www.twilio.com/blog/2017/11/getting-started-with-scala-and-twilio.html)
 * Dive into the [API Reference documentation for Twilio SMS](https://www.twilio.com/docs/sms/api)
