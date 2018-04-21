@@ -53,7 +53,7 @@ In this Quickstart, you will learn how to:
 1. Reply to incoming messages with an SMS
 
 ### Sign up for Twilio and get a phone number
-If you already have a Twilio account and an SMS-enabled Twilio phone number, you’re all set here! [Feel free to jump to the next step.]()
+If you already have a Twilio account and an SMS-enabled Twilio phone number, you’re all set here! [Feel free to jump to the next step.](https://github.com/robinske/hello-finatra.g8/blob/master/README.markdown#allow-twilio-to-talk-to-your-flask-application)
 
 Before you can send an SMS from Python, you'll need to [sign up for a Twilio account](https://www.twilio.com/try-twilio) or sign into your existing account and [purchase an SMS-capable phone number](https://www.twilio.com/console/phone-numbers).
 
