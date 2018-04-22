@@ -21,7 +21,7 @@ class HelloServer extends HttpServer {
 class HelloController extends Controller {
 
   get("/hello") { request: Request =>
-    s"Hello, \${request.params.getOrElse("name", "friend")}!"
+    s"Hello, \${request.params.getOrElse("name", "World")}!"
   }
 
 }
