@@ -1,4 +1,4 @@
-package $name$
+package hello_finatra
 
 import com.twitter.finagle.http.Request
 import com.twitter.finatra.http.{Controller, HttpServer}
